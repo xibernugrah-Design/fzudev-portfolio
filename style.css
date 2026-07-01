@@ -728,3 +728,49 @@ NAVBAR
     font-size: 12px;
     font-weight: 600;
 }
+
+/* ================= CERTIFICATES ================= */
+
+.certificates {
+    width: 90%;
+    max-width: 1300px;
+    margin: 150px auto 0;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.cert-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.cert-card:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 30px rgba(56, 189, 248, .15);
+    transform: translateY(-5px);
+}
+
+.cert-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cert-info {
+    padding: 15px 20px;
+}
+
+.cert-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
