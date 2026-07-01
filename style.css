@@ -860,6 +860,10 @@ NAVBAR
 
 /* ================= RESPONSIVE MOBILE ================= */
 
+.hamburger {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     /* NAVBAR */
@@ -951,6 +955,53 @@ NAVBAR
 
     .hero {
         min-height: auto;
+    }
+
+    /* HAMBURGER */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        border-radius: 3px;
+        transition: .3s;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 8px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -8px);
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background: rgba(7, 11, 23, 0.98);
+        border: 1px solid rgba(255, 255, 255, .08);
+        border-radius: 20px;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+        z-index: 99;
     }
 
 }
