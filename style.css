@@ -939,4 +939,18 @@ NAVBAR
         font-size: 36px;
     }
 
+    /* REDUCE SECTION MARGIN */
+    .about,
+    .skills,
+    .experience,
+    .projects,
+    .certificates,
+    .contact {
+        margin: 80px auto 0;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
 }
