@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href=https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Dancing+Script:wght@600&display=swap>
 
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -22,6 +22,13 @@
 </head>
 
 <body>
+
+    <!-- Animated Particle Network Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
     <!-- Background Glow -->
     <div class="bg-glow glow-blue"></div>
@@ -50,77 +57,62 @@
 
             </a>
 
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </nav>
 
     </header>
 
 
     <!-- ================= HERO ================= -->
-    <section class="hero">
+<section class="hero" id="home">
+
+    <!-- Tulisan raksasa di belakang (dekorasi) -->
+    <span class="hero-watermark" aria-hidden="true">PORTFOLIO</span>
 
     <div class="hero-left">
 
-        <span class="badge">
-
-            🟢 Open To Work
-
-        </span>
-
-        <h3>
-            <span id="typing-text"></span><span class="cursor">|</span>
-        </h3>
+        <p class="hero-hello">Hello, I'm</p>
 
         <h1>
-
-            Anugrah <br>
-            Firmansyah Ridwan
-
+            <span class="name-white">Anugrah</span>
+            <span class="name-blue">Firmansyah Ridwan</span>
         </h1>
 
-        <p>
+        <h3><span id="typing-text"></span><span class="cursor">|</span></h3>
 
-            Saya adalah mahasiswa Informatika yang berfokus
-            pada pengembangan website modern, UI/UX,
-            dan teknologi Full Stack Development.
-
+        <p class="hero-desc">
+            Saya mahasiswa Informatika yang berfokus pada pengembangan
+            website modern, UI/UX, dan Full Stack Development.
         </p>
 
+        <span class="badge">Available for Freelance</span>
+
         <div class="hero-btn">
-
-            <a href="#" class="primary">
-
-                View Projects
-
-            </a>
-
-            <a href="#" class="secondary">
-
-                Contact Me
-
-            </a>
-
+            <a href="#projects" class="primary">View Projects</a>
+            <a href="#contact" class="secondary">Contact Me</a>
         </div>
 
         <div class="social">
-
-            <a href="#">Github</a>
-
-            <a href="#">LinkedIn</a>
-
-            <a href="#">Email</a>
-
+            <a href="https://github.com/xibernugrah-Design" target="_blank">GitHub</a>
+            <a href="https://instagram.com/_nug07" target="_blank">Instagram</a>
+            <a href="mailto:Xibernugrah@gmail.com">Email</a>
         </div>
 
     </div>
 
     <div class="hero-right">
+        <img class="hero-photo" src="assets/images/profile.png" alt="Anugrah Firmansyah Ridwan">
+    </div>
 
-        <div class="profile-card">
-
-            <img src="assets/images/profile.png">
-
-        </div>
-
+    <div class="hero-stats">
+        <div class="stat"><strong data-target="7">7</strong><span>Sertifikat</span></div>
+        <div class="stat"><strong data-target="3">3</strong><span>Pengalaman</span></div>
+        <div class="stat"><strong data-target="1">1</strong><span>Proyek</span></div>
     </div>
 
 </section>
